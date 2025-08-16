@@ -57,6 +57,18 @@
 <canvas id="game"></canvas>
 
 <div id="hud">
+  <h1>🚗 Neon Racing</h1>
+  <p>Score: <span id="score">0</span></p>
+  <p>Use ← → or A / D to move</p>
+</div>
+
+<div id="gameOverScreen">
+  <h2>💥 Game Over!</h2>
+  <p>Your Final Score: <span id="finalScore">0</span></p>
+  <button onclick="restartGame()">Restart</button>
+</div>
+
+<div id="hud">
   <div class="topbar">
     <div class="stack">
       <span class="badge">🏁 <b id="distance">0</b> m</span>
@@ -576,5 +588,6 @@ document.getElementById('btnRestart').addEventListener('click', ()=>{ reset(); r
 // Start with a tiny toast
 setTimeout(()=> showToast('Ready'), 400);
 </script>
+  <script type="module" src="script.js"></script>
 </body>
 </html>
